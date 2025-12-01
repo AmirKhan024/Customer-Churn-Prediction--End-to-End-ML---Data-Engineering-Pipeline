@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        function clearForm() {
+    
+            const inputs = document.querySelectorAll("#predictionForm input[type='text']");
+            inputs.forEach(input => input.value = ""); 
+
+         
+            document.getElementById("output1").textContent = ""; 
+            document.getElementById("output2").textContent = ""; 
+        }
+    </script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Customer Churn Prediction</h2>
+        <form method="POST" enctype="multipart/form-data" id="predictionForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="query1" name="query1" placeholder="SeniorCitizen" value="{{ query1 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query2" name="query2" placeholder="MonthlyCharges" value="{{ query2 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query3" name="query3" placeholder="TotalCharges" value="{{ query3 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query4" name="query4" placeholder="Gender" value="{{ query4 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query5" name="query5" placeholder="Partner" value="{{ query5 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query6" name="query6" placeholder="Dependents" value="{{ query6 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query7" name="query7" placeholder="PhoneService" value="{{ query7 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query8" name="query8" placeholder="MultipleLines" value="{{ query8 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query9" name="query9" placeholder="InternetService" value="{{ query9 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query10" name="query10" placeholder="OnlineSecurity" value="{{ query10 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query11" name="query11" placeholder="OnlineBackup" value="{{ query11 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query12" name="query12" placeholder="DeviceProtection" value="{{ query12 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query13" name="query13" placeholder="TechSupport" value="{{ query13 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query14" name="query14" placeholder="StreamingTV" value="{{ query14 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query15" name="query15" placeholder="StreamingMovies" value="{{ query15 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query16" name="query16" placeholder="Contract" value="{{ query16 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query17" name="query17" placeholder="PaperlessBilling" value="{{ query17 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query18" name="query18" placeholder="PaymentMethod" value="{{ query18 }}">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query19" name="query19" placeholder="Tenure" value="{{ query19 }}">
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Predict</button>
+                <button type="button" class="btn btn-secondary" onclick="clearForm()">Clear</button>
+            </div>
+            <h4 class="mt-4" id="output1">{{ output1 }}</h4>
+            <h4 id="output2">{{ output2 }}</h4>
+        </form>
+    </div>
+</body>
+</html>
