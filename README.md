@@ -32,7 +32,7 @@ Customer churn is a critical issue for telecom companies, resulting in significa
 
 ### Our Solution
 This project delivers a **complete AI-powered churn management system** that:
-- ✅ **Predicts churn** with 87.43% accuracy using Random Forest ML models
+- ✅ **Predicts churn** with 92.43% accuracy using Random Forest ML models
 - ✅ **Automates the entire pipeline** from data ingestion to model deployment
 - ✅ **Provides real-time predictions** through an intuitive web interface
 - ✅ **Delivers actionable insights** via interactive Power BI dashboards
@@ -58,7 +58,7 @@ This project delivers a **complete AI-powered churn management system** that:
 
 ## 🏆 Key Achievements
 
-- **87.43% Model Accuracy** - Random Forest classifier with optimized hyperparameters
+- **92.43% Model Accuracy** - Random Forest classifier with optimized hyperparameters
 - **Real-time Processing** - Event-driven architecture with AWS Lambda (sub-minute latency)
 - **Production Web App** - Flask application deployed on PythonAnywhere
 - **Automated Pipeline** - Zero manual intervention after initial setup
@@ -125,7 +125,7 @@ This project delivers a **complete AI-powered churn management system** that:
 
 ### 🤖 Machine Learning
 - **Algorithm**: Random Forest (100 trees, depth 10)
-- **Accuracy**: 87.43%
+- **Accuracy**: 92.43%
 - **Class Balancing**: SMOTEENN technique
 - **Feature Importance**: Contract (16.43%), Tenure (15.31%), TotalCharges (9.29%)
 - **Model Versioning**: Timestamped artifacts in S3
